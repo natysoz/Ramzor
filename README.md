@@ -2,8 +2,9 @@
 Ramzor - Demo Bitcoin wallet
 
 Demo: 
-(Its Recommended To use Dev tools and emulate the app in Iphone X and Pixel 2XL sizes)
 https://bitwallet-d3b56.firebaseapp.com
+
+(Its Recommended To use Dev tools and emulate the app in Iphone X and Pixel 2XL sizes)
 
 My Design:
 https://www.behance.net/gallery/84581149/Ramzor-Bitcoin-wallet
