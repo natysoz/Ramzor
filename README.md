@@ -1,7 +1,7 @@
 # Ramzor
 Ramzor - Demo Bitcoin wallet
 
-Demo: (If your a job seeker its better use Chrome tools and see the app in Iphone X and Pixel 2XL sizes)
+Demo: (If your HR recruiter its better use Chrome tools and see the app in Iphone X and Pixel 2XL sizes)
 https://bitwallet-d3b56.firebaseapp.com
 
 My Design:
