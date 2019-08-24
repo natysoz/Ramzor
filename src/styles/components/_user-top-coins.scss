@@ -1,0 +1,58 @@
+.coins-container {
+  @include flexy(column, space-around, center);
+}
+
+
+.top-coin {
+  @include flexy(row, space-around, center);
+  width: 100%;
+  padding: rem(15px);
+  animation: card-enter .3s ease-in;
+
+  &:hover {
+    background-color: $background-brighter;
+    cursor: pointer;
+  }
+
+  img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.top-coin > * {
+  width: rem(80px);
+  text-align: left;
+}
+
+.top-coin > *:last-child {
+  width: rem(80px);
+  text-align: right !important;
+}
+
+
+.round-image_full {
+  @include margin-center;
+  margin-top: rem(25px);
+  width: rem(100px);
+  height: rem(100px);
+  border-radius: rem(200px);
+  overflow: hidden;
+
+  img {
+    width: rem(100px);
+    height: rem(100px);
+  }
+}
+
+.round-image {
+  width: rem(50px);
+  height: rem(50px);
+  border-radius: rem(100px);
+  overflow: hidden;
+
+  img {
+    width: rem(50px);;
+    height: rem(50px);
+  }
+}

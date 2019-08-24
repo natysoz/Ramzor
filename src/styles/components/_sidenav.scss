@@ -1,0 +1,44 @@
+
+
+
+.sidenav-container{
+    @include flexy(column,space-around,center);
+    background-color: $background-brighter;
+    position: absolute;
+    right: 40%;
+    top:8vh;
+    z-index: 3;
+    width: 60%;
+    height: 100%;
+    max-height: rem(450px);
+    transform-origin: top;
+    animation: scale-up 0.3s ease-in;
+}
+
+.close-modal{
+    align-self: center;
+    padding: rem(20px);
+    img{
+        width: rem(40px);
+        height: rem(40px);
+        cursor: pointer;
+    }
+}
+
+.github{
+    img{
+        width: rem(80px);
+        height: rem(80px);
+    }
+    &>*{
+        padding: rem(5px)
+    }
+}
+
+.sidenav-cancel{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    @include rg($background-dark);
+    z-index: 2;
+}

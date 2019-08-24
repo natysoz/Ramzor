@@ -1,0 +1,53 @@
+ @mixin round-button($fontSize,$color,$width,$height,$radius,$border,$bgColor){
+  @include full-center;
+  width: rem($width);
+  height: rem($height);
+  border-radius:$radius;
+  color: $color;
+  background-color:$bgColor;
+}
+
+ @mixin button($fontSize,$color,$width,$height,$radius,$border){
+  @include full-center;
+  font-size:rem($fontSize);
+  width: rem($width);
+  height: rem($height);
+  border-radius:$radius;
+  border:$border;
+  color: $color;
+  background-color:$brand-color;
+  cursor: pointer;
+ }
+
+ @mixin input($color,$bgColor,$border){
+   color: $color;
+   background-color: $bgColor;
+   border:$border;
+ }
+
+
+ @mixin scale(){
+   transition:all 0.15s ease-in;
+   &:hover{
+     cursor: pointer;
+     transform: scale(1.035);
+   }
+ }
+
+ .button-copy{
+   @include button(22px,$background-brighter,225px,50px,0px,none);
+   @include scale;
+ }
+
+ .button-rect{
+   @include button(22px,$background-brighter,225px,70px,0px,none);
+   @include scale;
+ }
+
+ .button-circle{
+   @include round-button(18px,$background-dark,80px,80px,250px,none,$accent-color);
+   @include scale;
+ }
+
+ .button-react-xs{
+ }

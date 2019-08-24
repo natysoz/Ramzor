@@ -1,0 +1,72 @@
+.login-container{
+  @include flexy(column,space-evenly,center);
+  height: 98vh;
+
+  .login-title{
+    font-size: 30px;
+    span{
+      color: $brand-color;
+      font-size: 40px;
+      font-weight: 900;
+    }
+  }
+}
+
+
+.login-input{
+  width: 80%;
+  max-width: 300px;
+  height: rem(40px);
+  margin: 0 auto;
+  border-bottom: 1px solid $text-smoke ;
+  padding: rem(1px);
+  @include flexy(row,space-around,center);
+
+  caret-color: $brand-color;
+    input:-webkit-autofill {
+      -webkit-box-shadow:200px 200px 0 $background-dark inset;
+    }
+
+    input{
+      -webkit-box-shadow:200px 200px 0 $background-dark inset;
+      box-shadow:200px 200px 0 $background-dark inset;
+      color:$text-smoke;
+      width: 77%;
+      padding-right: 30px;
+      text-align: center;
+      height: 100%;
+      font-size: rem(19px);
+      @include input($text,$background-dark,none);
+      outline-color: $background-dark;
+    }
+}
+
+.username {
+  @include flexy(row,center,center);
+  height: 100px;
+  background-color: $background-dark;
+  color: $brand-color;
+  //ebb811
+}
+
+.application-title{
+  color: $text;
+  font-size: rem(33px);
+}
+
+.user-example{
+  color: $text-darker;
+}
+
+.login-logo{
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.login-container >*{
+  animation: card-enter .3s ease-in;
+
+}

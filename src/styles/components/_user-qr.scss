@@ -1,0 +1,7 @@
+.user-qr{
+  @include flexy(row,space-around,center);
+}
+.copy-link{
+  @include flexy(row,space-around,center);
+  padding-top: rem(20px);
+}

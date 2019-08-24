@@ -1,0 +1,22 @@
+header{
+    @include flexy(row,space-around,center);
+    height: 10vh;
+    background-color: $background-brighter;
+    margin: 0;
+    font-size: rem(32px);
+    a{
+        width:  rem(32px);
+        height:  rem(32px);
+    }
+    span{
+        width:  rem(32px);
+        height:  rem(32px);
+    }
+}
+
+header >*:not(div):hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+

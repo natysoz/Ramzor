@@ -1,0 +1,9 @@
+.user-balance{
+    @include flexy(column,center,center);
+    background-color: $background-brighter;
+    height: 12vh;
+    @include breakpoint(xxs){
+        height: 20vh;
+    }
+}
+
