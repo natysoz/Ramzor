@@ -1,4 +1,4 @@
-Ramzor - Demo Bitcoin wallet in REACH HOOKS Tech
+REACT HOOKS version of the project with functional programming without classes
 
 Demo: https://bitwallet-d3b56.firebaseapp.com
 
