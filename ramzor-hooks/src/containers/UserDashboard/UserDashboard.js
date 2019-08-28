@@ -14,7 +14,6 @@ const UserPayment = React.lazy(() => {return import("./UserPayment");});
 const UserContactSearch = React.lazy(() => {return import("./UserContactSearch");});
 const UserQrCode = React.lazy(() => {return import("./UserQrCode");});
 
-/* eslint-disable */
 const UserDashboard = props => {
   useEffect(() => {
     props.convertUserBalance(props.balance);
@@ -30,29 +29,11 @@ const UserDashboard = props => {
         </React.Fragment>
       ) : null}
       <Suspense fallback={<div>Loading...</div>}>
-        <Route
-          path="/dashboard/user/get"
-          exact
-          render={props => <UserQrCode {...props} />}
-        />
-        <Route
-          path="/dashboard/user/prices"
-          exact
-          render={props => <UserTopCoins {...props} />}
-        />
-        <Route
-          path="/dashboard/user/prices/:id"
-          render={props => <UserCoinInfo {...props} />}
-        />
-        <Route
-          path="/dashboard/user/pay"
-          exact
-          render={props => <UserPay {...props} />}
-        />
-        <Route
-          path="/dashboard/user/pay/:id"
-          render={props => <UserPayment {...props} />}
-        />
+        <Route path="/dashboard/user/get" exact render={props => <UserQrCode {...props} />}/>
+        <Route path="/dashboard/user/prices" exact render={props => <UserTopCoins {...props} />}/>
+        <Route path="/dashboard/user/prices/:id" render={props => <UserCoinInfo {...props} />}/>
+        <Route path="/dashboard/user/pay" exact render={props => <UserPay {...props} />}/>
+        <Route path="/dashboard/user/pay/:id" render={props => <UserPayment {...props} />}/>
       </Suspense>
     </React.Fragment>
   );
@@ -73,7 +54,4 @@ const mapDispatchToProps = dispatch => {
   };
 };
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(UserDashboard);
+export default connect(mapStateToProps,mapDispatchToProps)(UserDashboard);
