@@ -1,0 +1,30 @@
+
+
+
+.contact-item{
+    @include flexy(row,space-around,center);
+    width: 100%;
+    padding: rem(15px);
+    animation: card-enter .3s ease-in;
+    &:hover{
+        background-color: $background-brighter;
+        cursor: pointer;
+    }
+
+    img{
+        width: 50px ;
+        height: 50px ;
+    }
+}
+
+.contact-item >*{
+    text-align: left;
+    width: 50px;
+}
+
+.contact-item >*:last-child{
+    width: 100px;
+    text-align: right !important;
+}
+
+

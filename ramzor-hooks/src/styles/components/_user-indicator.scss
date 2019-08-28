@@ -1,0 +1,17 @@
+
+@mixin circle($width,$height,$radius,$bgColor){
+  width: $width;
+  height: $height;
+  border-radius: $radius;
+  background-color:$bgColor ;
+}
+
+.dot-container{
+  @include flexy(row,center,center)
+}
+.online-user{
+  @include circle(10px,10px,100px,$success-color);
+}
+.offline-user{
+  @include circle(10px,10px,100px,$accent-color);
+}

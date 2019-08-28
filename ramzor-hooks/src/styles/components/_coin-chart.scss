@@ -1,0 +1,23 @@
+
+.sparkline-container{
+    &>* {
+        padding-top: rem(10px);
+    }
+}
+
+.coininfo-field{
+    @include flexy(row,center,center);
+    div{
+        text-align: left;
+    }
+}
+.coininfo-field >*{
+    width: 35%;
+    text-align: center;
+}
+.coin-statistics{
+    @include flexy(row,center,center);
+    & >*{
+        padding: rem(3px);
+    }
+}

@@ -1,0 +1,96 @@
+@mixin rbg-saturated($base-color) {
+  color: saturate($base-color, 10%);
+}
+
+@mixin rg($base-color) {
+  background-color: rgba($base-color, .85);
+}
+
+@mixin menu-item($color,$size,$deco) {
+  color: $color;
+  font-size: rem($size);
+  text-decoration: $deco;
+}
+
+@mixin font($color,$size,$weight,$family) {
+  color: $color;
+  font-size: rem($size);
+  font-weight: $weight;
+  font-family: $family;
+}
+
+@mixin flex {
+  display: flex;
+}
+
+@mixin flexy($direction,$justify,$align) {
+  @include flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin flex-center {
+  @include flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+@mixin flex-row {
+  @include flex;
+  flex-direction: row;
+}
+
+@mixin full-center {
+  // @include flex;
+  @include flex-center;
+}
+
+@mixin flex-col {
+  @include flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+//Main size of the website container
+
+@mixin container($max-width:1480px) {
+  margin: 0 auto;
+  @include breakpoint(lg) {
+    max-width: $max-width;
+  }
+  @include breakpoint(xs) {
+    width: 100%;
+  }
+  @include breakpoint(sm) {
+    width: 100%;
+  }
+}
+
+@mixin margin-center {
+  margin: 0 auto;
+}
+
+@mixin reset-list {
+  margin: 0;
+  padding: 50px;
+  list-style: none;
+}
+
+@mixin horizontal-list {
+  @include reset-list;
+
+  li {
+    display: inline-block;
+    margin: {
+      left: -2px;
+      right: 2em;
+    }
+  }
+}
+
+nav ul {
+  @include horizontal-list;
+}

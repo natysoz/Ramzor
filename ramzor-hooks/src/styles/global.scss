@@ -1,0 +1,35 @@
+// Setup
+@import "setup/variables.scss";
+@import "setup/functions.scss";
+@import "setup/mixins.scss";
+
+// Basics
+@import "basics/helpers.scss";
+@import "basics/layout.scss";
+@import "basics/base.scss";
+@import "basics/links.scss";
+@import "basics/buttons.scss";
+
+//Animations
+@import "animations/animations";
+
+
+//Components
+@import "components/about-page";
+@import "components/login";
+@import "components/spinner";
+@import "components/navbar";
+@import "components/user-balance";
+@import "components/user-actions";
+@import "components/user-indicator";
+@import "components/user-top-coins";
+@import "components/user-qr";
+@import "components/user-pay";
+@import "components/contact";
+@import "components/sidenav";
+@import "components/coin-chart";
+@import "components/contact-full";
+@import "components/custom-input";
+@import "components/success-container";
+
+

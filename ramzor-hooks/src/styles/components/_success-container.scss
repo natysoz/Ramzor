@@ -1,0 +1,19 @@
+.success-container{
+    height: 70vh;
+    margin-top:50%;
+    justify-content: center;
+    display: flex;
+}
+
+.success-loading{
+    display: flex;
+    flex-direction: column;
+}
+
+.disabled-link{
+    pointer-events: none;
+}
+
+.animate-in{
+    animation: slide-in .40s ease-in;
+}

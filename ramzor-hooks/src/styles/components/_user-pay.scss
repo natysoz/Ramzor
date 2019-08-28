@@ -1,0 +1,30 @@
+
+
+.pay-container{
+   @include flexy(column,space-evenly,center);
+   animation: card-enter-left 0.5s ease-in;
+   margin: 0 auto;
+   background-color: $background-brighter;
+   height: 19vh;
+
+   input:-webkit-autofill {
+      -webkit-box-shadow:200px 200px 0 $background-brighter inset;
+   }
+
+   input{
+      padding-right: 26px;
+      text-align: center;
+      -webkit-box-shadow:200px 200px 0 $background-brighter inset;
+      box-shadow:200px 200px 0 $background-brighter inset;
+      color:$text-smoke;
+      width: 100%;
+      height: 100%;
+      font-size: rem(32px);
+      @include input($text,$background-brighter,none);
+      outline-color: $background-brighter;
+   }
+
+}
+.pay-cancel{
+   @include flexy(row,space-evenly,center);
+}
